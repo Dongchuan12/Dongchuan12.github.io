@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>欢喜闹元宵</title>
+    <style>
+    *{padding:0; margin:0 auto;}
+
+    html,body{width: 100%;height: 100%;}
+    body{max-width:640px;margin: 0 auto;text-align:center;  }
+    img{
+        float:left;
+        display:inline-block;
+        width:100%;
+        height: auto;
+        }
+        #img_list1, #img_list3, #img_list4, #img_list6{
+            width: 30%;
+        }
+        #img_list2,#img_list5{
+            width: 40%;
+        }
+        .overlay{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background:#000;
+            opacity: 0.6;
+            display: none;
+        }
+        .pop_list{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: none;
+        }
+        #pop_close{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 10%;
+            right: 10%;
+            margin: -25px 0 0 -25px;
+            display: none;
+        }
+        .pop{
+            display: none;
+        }
+
+
+
+    </style>
+    <script>
+   
+    function LimitPromotionDetail(id) {
+        ening.gotoNativeView("ening://QuantityLimitPromotionDetail?skuId="+ id +"");
+    }
+
+    function GoodsDetail(id) {
+            ening.gotoNativeView("ening://GoodsDetail?skuId="+ id +"");
+    }
+
+
+    function CouponList() {
+        ening.gotoNativeView("ening://CouponList");
+    }
+    //piwik记录Goal事件
+    var _paq = _paq || [];
+    function testPiwikClick (trackGoal, url) {
+        var  hrefs = location.href;
+        var buttonName = url;
+        var pageUrl = "http://一应生活/" + url;
+        _paq.push(['setUserId', ""]);
+        _paq.push(['setCustomUrl',pageUrl]);
+        _paq.push(['setDocumentTitle',buttonName]);
+        _paq.push(['trackGoal', trackGoal]);//目标事件，1表示 注册事件
+        var u = 'http://piwik.einwin.com/piwik/';
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId',"5"]);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    }
+
+    //piwik记录浏览页面
+    function testPiwikView(url)
+    {
+        var hrefs = location.href;
+        var fileName = url;
+        // var filename = hrefs.substr(hrefs.lastIndexOf('/')+1).replace('.html','');
+        var pageUrl = "http://一应生活/打开应用/" + url;
+        _paq.push(['setUserId', ""]);
+        _paq.push(['setCustomUrl',pageUrl]);
+        _paq.push(['setDocumentTitle',fileName]);
+        _paq.push(['trackPageView']);
+        _paq.push(["enableLinkTracking"]);
+        var u = 'http://piwik.einwin.com/piwik/';
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '5']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;  
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    }
+
+    window.onload = function() {
+        testPiwikView("欢喜闹元宵");
+    };
+    </script>
+</head>
+
+<body>
+        <img src="images/元宵_01.jpg"/>
+        <img src="images/元宵_02.jpg"/>
+
+
+        <!-- 灯谜列表 -->
+        <img class="list" id="img_list1" src="images/list1.jpg"/>
+        <img class="list" id="img_list2" src="images/list2.jpg"/>
+        <img class="list" id="img_list3" src="images/list3.jpg"/>
+        <img class="list" id="img_list4" src="images/list4.jpg"/>
+        <img class="list" id="img_list5" src="images/list5.jpg"/>
+        <img class="list" id="img_list6" src="images/list6.jpg"/>
+
+        <!-- 弹窗 -->
+        <div class="overlay"></div>
+        <div class="pop_list">
+            <img id="pop_close" src="images/close.png"/>
+            <a href="javascript:void(0)"  target="_blank" onClick="GoodsDetail('4a5694ad-6853-471d-a022-437d1b90c62a')"><img class="pop" id="pop_list1" src="images/pop1.png"/></a>
+            <a href="javascript:void(0)"  target="_blank" onClick="GoodsDetail('cb705d96-7b60-4f3c-ac21-62d9aa18a4f2')"><img class="pop" id="pop_list2" src="images/pop2.png"/></a>
+            <a href="javascript:void(0)"  target="_blank" onClick="GoodsDetail('1a825019-88eb-45a9-a442-3739ffa84b52')"><img class="pop" id="pop_list3" src="images/pop3.png"/></a>
+            <img class="pop" id="pop_list4" src="images/pop4.png"/>
+            <a href="javascript:void(0)"  target="_blank" onClick="GoodsDetail('f52753e3-2969-466a-9962-8c2a12796432')"><img class="pop" id="pop_list5" src="images/pop5.png"/></a>
+            <a href="javascript:void(0)"  target="_blank" onClick="GoodsDetail('d3fd16b8-2347-4102-8a86-05a8a111288f')"><img class="pop" id="pop_list6" src="images/pop6.png"/></a>
+        </div>
+
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                // 点击谜面弹出弹窗
+                $('#img_list1').on('click',function(){
+                    $('.overlay').css('display','block');
+                    $('#pop_close').css('display','block');
+                    $('.pop_list').css('display','block');
+                    $('#pop_list1').css('display','block');
+                });
+                $('#img_list2').on('click',function(){
+                    $('.overlay').css('display','block');
+                    $('#pop_close').css('display','block');
+                    $('.pop_list').css('display','block');
+                    $('#pop_list2').css('display','block');
+                });
+                $('#img_list3').on('click',function(){
+                    $('.overlay').css('display','block');
+                    $('#pop_close').css('display','block');
+                    $('.pop_list').css('display','block');
+                    $('#pop_list3').css('display','block');
+                });
+                $('#img_list4').on('click',function(){
+                    $('.overlay').css('display','block');
+                    $('#pop_close').css('display','block');
+                    $('.pop_list').css('display','block');
+                    $('#pop_list4').css('display','block');
+                });
+                $('#img_list5').on('click',function(){
+                    $('.overlay').css('display','block');
+                    $('#pop_close').css('display','block');
+                    $('.pop_list').css('display','block');
+                    $('#pop_list5').css('display','block');
+                });
+                $('#img_list6').on('click',function(){
+                    $('.overlay').css('display','block');
+                    $('#pop_close').css('display','block');
+                    $('.pop_list').css('display','block');
+                    $('#pop_list6').css('display','block');
+                });
+
+                // 弹窗关闭按钮
+                $('#pop_close').on('click',function(){
+                    $('.overlay').css('display','none');
+                    $('#pop_close').css('display','none');
+                    $('.pop_list').css('display','none');
+                    $('#pop_list1').css('display','none');
+                    $('#pop_list2').css('display','none');
+                    $('#pop_list3').css('display','none');
+                    $('#pop_list4').css('display','none');
+                    $('#pop_list5').css('display','none');
+                    $('#pop_list6').css('display','none');
+                });
+            })
+        </script>
+
+<img src="images/元宵_09.jpg"/>
+<a href="javascript:void(0)"  target="_blank" onClick="CouponList()"> <img src="images/元宵_10.jpg" style="width:50%;"/></a>
+<a href="javascript:void(0)"  target="_blank" onClick="CouponList()"><img src="images/元宵_10-11.jpg" style="width:50%;"/></a>
+<a href="javascript:void(0)"  target="_blank" onClick="CouponList()"><img src="images/元宵_10-12.jpg" style="width:50%;"/></a>
+<a href="javascript:void(0)"  target="_blank" onClick="CouponList()"><img src="images/元宵_10-13.jpg" style="width:50%;"/></a>
+<a href="javascript:void(0)"  target="_blank" onClick="CouponList()"><img src="images/元宵_10-14.jpg" style="width:50%;"/></a>
+<img src="images/元宵_10-15.jpg" style="width:50%;"/>
+<img src="images/元宵_16.jpg"/>
+</body>
+</html>

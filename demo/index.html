@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="董川的自留地 董川的前端代码">
+        <meta name="keywords" content="Dongchuan Demo_12 董川 前端 javascript html css js">
+        <meta name="author" content="董川 Demo_12">
+        <meta name="robots" content="all">
+        <base target="_blank">
+        <title>董川的前端作品</title>
+
+        <style>
+        *{margin: 0;padding: 0;}
+        body{font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", Heiti, "黑体", sans-serif;}
+        h2,a{
+            font-size: 22px;
+            line-height: 2.7;
+        }
+        .according-title, .according-list a{
+            -webkit-transition:all 0.7s ease;
+               -moz-transition:all 0.7s ease;
+                -ms-transition:all 0.7s ease;
+                 -o-transition:all 0.7s ease;
+                    transition:all 0.7s ease;
+        }
+
+        .main{
+            width: 540px;
+            box-sizing:border-box;
+            padding: 80px;
+            margin: 60px auto;
+            border-radius: 5px;
+            border:1px solid #ccc;
+            box-shadow: 0 0 4px #ccc;
+        }
+        /*使用@media screen解决移动web开发的多分辨率问题
+        *判断媒体类型，执行不同的css样式属性
+        */
+        @media screen and (max-width: 540px){
+            .main{width: 90%;padding: 40px;}
+            h2,a{font-size: 14px;}
+        }
+        .according-wrap{
+            border-bottom: 1px solid #ccc;
+        }
+        .according-title, .according-list a{
+            display: block;
+            color: #0a8cd2;
+            text-indent: 20px;
+            border-radius: 5px;
+            cursor:pointer;/*光标变成一只手*/
+            text-decoration: none;
+        }
+        .according-title:hover,.according-list a:hover{
+            color: #fff;
+            background-color: #56ad56;
+            text-indent: 40px;
+        }
+        .according-title.closed+.according-list{
+            -webkit-transform:scale(1,0);
+               -moz-transform:scale(1,0);
+                -ms-transform:scale(1,0);
+                 -o-transform:scale(1,0);
+                    transform:scale(1,0);
+            -webkit-transition-duration:0s;
+               -moz-transition-duration:0s;
+                -ms-transition-duration:0s;
+                 -o-transition-duration:0s;
+                    transition-duration:0s;
+            height: 0;
+        }
+        .according-list{
+            padding-left: 30px;
+            -webkit-transform-origin:top center;
+               -moz-transform-origin:top center;
+                -ms-transform-origin:top center;
+                 -o-transform-origin:top center;
+                    transform-origin:top center;
+            -webkit-transition:transform 0.6s cubic-bezier(0.25,0.1,0.3,1.5);
+               -moz-transition:transform 0.6s cubic-bezier(0.25,0.1,0.3,1.5);
+                -ms-transition:transform 0.6s cubic-bezier(0.25,0.1,0.3,1.5);
+                 -o-transition:transform 0.6s cubic-bezier(0.25,0.1,0.3,1.5);
+                    transition:transform 0.6s cubic-bezier(0.25,0.1,0.3,1.5);
+        }
+
+        </style>
+    </head>
+    <body>
+    <div class="main" id="main">
+        <section class="according-wrap">
+            <h2 class="according-title closed">第一章 &nbsp;&nbsp;Canvas绘图</h2>
+            <div class="according-list">
+                <a href="myWork/canvas/canvas0/clock.html">Canvas时钟</a>
+                <a href="myWork/canvas/canvas1/index.html">绚丽效果的计时器</a>
+            </div>
+        </section>
+        <section class="according-wrap">
+            <h2 class="according-title closed">第二章 &nbsp;&nbsp;CSS3绘图</h2>
+            <div class="according-list">
+                <a href="myWork/css/hellokitty/hellokitty.html">Hello Kitty凯蒂猫</a>
+            </div>
+        </section>
+        <section class="according-wrap">
+            <h2 class="according-title closed">第三章 &nbsp;&nbsp;模仿的网站</h2>
+            <div class="according-list">
+                <a href="myWork/model/model0/index.html">扁平化博客</a>
+                <a href="myWork/model/model1/test.html">慕课首页</a>
+                <a href="">知乎登录页</a>
+            </div>
+        </section>
+        <section class="according-wrap">
+            <h2 class="according-title closed">第四章 &nbsp;&nbsp;第三方</h2>
+            <div class="according-list">
+                <a href="myWork/org/bootstrap/index.html">bootstrap 浏览器博物馆</a>
+                <a href=""></a>
+                <a href="myWork/org/blog/index.html">fullpage 全屏网页切换</a>
+            </div>
+        </section>
+        <section class="according-wrap">
+            <h2 class="according-title closed">第五章 &nbsp;&nbsp;移动端</h2>
+            <div class="according-list">
+                <a href="myWork/mobile/component/index.html">组件方式开发Web全站</a>
+                <a href="myWork/mobile/imooc/index.html">慕课贺春</a>
+                <a href="myWork/mobile/yuanxiao/index.html">元宵专题页</a>
+            </div>
+        </section>
+        <section class="according-wrap">
+            <h2 class="according-title closed">第六章 &nbsp;&nbsp;奇技淫巧</h2>
+            <div class="according-list">
+                <a href="#">建设中，敬请期待~</a>
+            </div>
+        </section>
+    </div>
+    <script>
+
+     function according(id){
+        var main = document.querySelector("#"+id);
+        var according_title = main.querySelectorAll(".according-title");
+        var len = according_title.length;
+
+        for(var i=len;i--;){
+          according_title[i].index = i;
+          according_title[i].onclick = function(){
+
+            for(var j=len;j--;){
+              if(j==this.index){
+                
+                according_title[j].classList.toggle("closed");
+              }else{
+                according_title[j].classList.add("closed");
+              }
+            }
+
+          }
+        }
+
+      }
+
+    according("main");
+  </script>
+    </body>
+</html>

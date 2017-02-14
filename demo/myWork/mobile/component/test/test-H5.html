@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+        <title>慕课网2016课程学习情况</title>
+
+        <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+        </style>
+
+        <!-- 基本资源库 -->
+        <script src="../js/lib/jquery.js"></script>
+        <script src="../js/lib/jquery-ui.min.js"></script>
+        <script src="../js/lib/jquery.fullpage.js"></script>
+
+        <!-- H5对象资源&管理内容:页和组件 -->
+        <script src="../js/H5.js"></script>
+        <link rel="stylesheet" href="../css/H5.css" />
+
+        <script src="../js/H5ComponentBase.js"></script>
+        <link rel="stylesheet" href="../css/H5ComponentBase.css" />
+    </head>
+    <body>
+    <script>
+    $(function(){
+        var h5 = new H5();
+
+        h5
+        .addPage('face')
+            .addComponent('log',{
+                text:'logo',
+                width:100,
+                height:60,
+                css:{backgroundColor:'red',top:100,opacity:0},
+                center:true,
+                animateIn:{opacity:1},
+                animateOut:{opacity:0}
+            })
+            .addComponent('slogan',{
+                text:'slogan',
+                width:100,
+                height:60,
+                css:{backgroundColor:'green',top:300,opacity:0},
+                center:true,
+                animateIn:{opacity:1},
+                animateOut:{opacity:0}
+            })
+        .addPage('desc')
+            .addComponent('caption',{
+                text:'核心理念',
+                width:100,
+                height:60,
+                css:{backgroundColor:'red',top:100,opacity:0},
+                center:true,
+                animateIn:{opacity:1},
+                animateOut:{opacity:0}
+            })
+        .addPage('bar')
+            .addComponent('caption',{
+                text:'课程分布方向',
+                width:100,
+                height:60,
+                css:{backgroundColor:'red',top:100,opacity:0},
+                center:true,
+                animateIn:{opacity:1},
+                animateOut:{opacity:0}
+            })
+        .loader();
+    });
+    </script>
+    </body>
+</html>

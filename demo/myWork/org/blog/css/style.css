@@ -1,0 +1,170 @@
+/* 
+* @Author: anchen
+* @Date:   2017-01-04 22:37:09
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-02-14 17:19:37
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft Yahei';
+}
+h2{
+    line-height: 34px;
+    font-size: 34px;
+    margin:0;
+}
+.section hr{
+    width: 160px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #333;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*menu*/
+#menu{
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    width: 90px;
+    margin: -160px 0 0;
+    padding: 0;
+    list-style-type: none;
+    z-index: 99;
+}
+#menu li{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+#menu a{
+    display: block;
+    width: 100%;
+    padding:10px 0;
+    background-color: #fff;
+}
+#menu .active a{
+    background: rgb(0,115,234);
+    color: #fff;
+}
+
+/*section*/
+.section{
+    overflow: hidden;
+}
+.container{
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+    text-align: center;
+}
+/*section1*/
+.section1 {
+    color: #fff;
+}
+.section1 h1{
+    font-size: 80px;
+    margin-top: 120px;
+}
+
+/*section2*/
+/*about*/
+.img-responsive{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto 40px;
+}
+#about .row{
+    width: 100%;
+    height: 60px;
+    margin:30px 0;
+}
+#about .download{
+    display: none;
+}
+
+/*skills*/
+#skills h2{
+    color:#fff;
+}
+#skills hr{
+    background-color: #fff;
+}
+#skills .col-md-4{
+    margin-top: 20px;
+}
+#skills .col-md-4 h4{
+    padding: 20px 0;
+    color: #fff;
+}
+
+/*section4*/
+/*contact*/
+#contact h2{
+    color:#fff;
+}
+#contact hr{
+    background-color: #fff;
+}
+#contact i{
+    display: block;
+    margin: 20px;
+}
+#contact .form-group>div{
+    margin:20px 0;
+}
+#contact h3{
+    color: #fff;
+    margin:40px 0;
+}
+#contact .form-control{
+    background-color: rgba(255,255,255,0.8);
+    color:#333;
+}
+#contact .btn-control{
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #fff;
+    background: #7bc3d1;
+    border-radius: 0;
+    color: #fff;
+    width: 143px;
+    height: 43px;
+}
+#contact .list-icon>li{
+    display: inline-block;
+    padding: 20px 10px 0;
+}
+
+/*section5*/
+.section5 {
+    text-align: center;
+    color: #054B6B;
+    overflow: hidden;
+}
+
+.section5 h1{
+    display: none;
+    margin: 10px;
+    line-height: 100px;
+    font-size: 80px;
+    border-bottom: 3px solid;
+}
+
+.section5 h3{
+    margin-top: 100%;
+    font-size: 40px;
+}
+.section5 div{
+    height: 70%;
+    line-height: 40px;
+    font-size: 18px;
+}
+.section5 .bigfont {
+    font-size: 30px;
+    font-weight: bold;
+    color:#054B60;
+}

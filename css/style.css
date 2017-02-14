@@ -2,185 +2,158 @@
 * @Author: anchen
 * @Date:   2017-01-04 22:37:09
 * @Last Modified by:   anchen
-* @Last Modified time: 2017-01-05 23:19:26
+* @Last Modified time: 2017-02-14 16:34:28
 */
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Microsoft Yahei';
 }
 h2{
-    line-height: 40px;
+    line-height: 34px;
     font-size: 34px;
-    font-weight: 0;
     margin:0;
 }
-h4{
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 18px;
-}
-li{
+
+/*menu*/
+#menu{
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    width: 90px;
+    margin: -160px 0 0;
+    padding: 0;
     list-style-type: none;
+    z-index: 99;
 }
-.navbar-inverse{
-    margin-bottom: 0;
-    border-radius: 0;
-}
-#nav .nav-right .nav{
-    margin-right: 50px;
-}
-.container hr{
-    height: 5px;
-    background-color: #7bc3d1;
-    border:0px;
-    width: 70px;
-    margin:20px auto;
-}
-/*header*/
-
-/*about*/
-#about{
-    padding:100px 0;
-    background-color: #f6f6f6;
-}
-#about p{
-    margin:30px auto;
-}
-.img-responsive{
-    margin:0 auto;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-/*skills*/
-#skills{
-    padding: 100px 0;
-    background-color: #7bc3d1;
-}
-#skills h2{
-    color:#fff;
-}
-#skills hr{
-    background-color: rgba(255,255,255,0.3)
-}
-#skills .col-md-4{
-    margin-top: 30px;
-}
-#skills .col-md-4 h4{
-    padding: 20px 0;
-    color: #fff;
-}
-
-
-
-/*resume*/
-#resume {
-    padding: 100px 0;
-    background:#f6f6f6;
-}
-#resume .row{
-    margin: 100px 0 0;
-}
-#resume .vertical-line{
-    position: absolute;
-    width: 2px;
-    background:#7bc3d1;
-    height: 100%;
-    left: 50%;
-}
-#reusme .timeline{
-    position: relative;
-    margin: 0 auto;
-    list-style-type: none;
-}
-#resume .timeline>li{
-    margin-bottom: 150px;
-    min-height: 100px;
-    position: relative;
-    display: list-item;
-}
-#resume .timeline-img{
-    position: absolute;
-    left: 50%;
-    margin-left: -75px;
-    width: 150px;
-    height: 150px;
-    background-color: #fbfbfb;
-    border: 1px solid #ccc;
-    border-radius: 50%;
+#menu li{
+    margin-top: 10px;
+    font-size: 14px;
     text-align: center;
 }
-#resume .timeline-img >h4{
-    font-weight: 500;
-    margin-top: 40px;
-}
-#resume .timeline-panel{
-    position: relative;
-    float: left;
-    text-align: right;
-    width: 41%;
-    padding: 0 50px;
-}
-#resume .timeline-panel > .timeline-heading h4{
-    text-transform: uppercase;
-}
-#resume .timeline-heading > .subheading{
-    text-transform: none;
-    color: #7bc3d1;
-}
-#resume .timeline-right{
-    float: right;
-    text-align: left;
-}
-/*contact*/
-#contact{
-    padding:100px 0;
-    background-color: #7bc3d1;
-}
-#contact h2{
-    color:#fff;
-}
-#contact hr{
-    background-color: rgba(255,255,255,0.3)
-}
-#contact i{
+#menu a{
     display: block;
-    margin: 20px;
+    width: 100%;
+    padding:10px 0;
+    background-color: #fff;
+    text-decoration: none;
 }
-#contact .form-group>div{
-    margin:20px 0;
-}
-#contact h3{
+#menu .active a{
+    background: rgb(0,115,234);
     color: #fff;
-    margin:40px 0;
-}
-#contact .form-control{
-    background-color: rgba(255,255,255,0.8);
-    color:#333;
-}
-#contact .btn-control{
-    display: block;
-    margin: 20px auto;
-    border: 1px solid #fff;
-    background: #7bc3d1;
-    border-radius: 0;
-    color: #fff;
-    width: 143px;
-    height: 43px;
-}
-#contact .list-icon>li{
-    display: inline-block;
-    padding: 20px 10px 0;
 }
 
-/*footer*/
-footer{
-    height: 100px;
-    width: 100%;
-    background-color: #343434;
+/*section*/
+.section{
+    overflow: hidden;
+}
+.container{
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+/*section1*/
+.section1 {
     color: #fff;
+}
+.section1 h1{
+    font-size: 100px;
+    margin:200px 0 50px 0;
+}
+/*section2*/
+.section2{
+    color:#fff;
+}
+.section2 h1{
+    display: none;
+    font-size: 70px;
+    margin-bottom: 60px;
+}
+.section2 .personal_detail{
+    float: left;
+    margin: 0 0 0 -50%;
+    height: 70%;
+    list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+}
+.section2 .personal_detail li{
+    height: 30px;
+}
+.section2 .personal_detail span{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+.section2 .personal_detail a{
+    color: #fff;
+    text-decoration: none;
+}
+.section2 .personal_skills{
+    margin-left: 150%;
+    height: 70%;
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+}
+.section2 .personal_skills p{
+    margin-bottom: 20px;
+}
+.section2 .personal_skills b{
+    font-size: 20px;
+}
+
+/*section3*/
+.section3{
+    color: #000;
+    text-align: center;
+    overflow: hidden;
+}
+.section3 h1{
+    display: none;
+    font-size: 80px;
     line-height: 100px;
-    font-size: 12px;
-    margin: 0;
+    margin-bottom: 80px;
+    border-bottom: 3px solid #000;
+}
+.section3 a{
+    display: none;
+    font-size: 32px;
+    text-decoration: none;
+    color: #000;
+}
+.section3 a:hover{
+    text-decoration: underline;
+}
+/*section4*/
+.section4 {
+    text-align: center;
+    color: #054B6B;
+    overflow: hidden;
+}
+
+.section4 h1{
+    display: none;
+    margin: 10px;
+    line-height: 100px;
+    font-size: 80px;
+    border-bottom: 3px solid;
+}
+
+.section4 h3{
+    margin-top: 100%;
+    font-size: 40px;
+}
+.section4 div{
+    height: 70%;
+    line-height: 40px;
+    font-size: 18px;
+}
+.section4 .bigfont {
+    font-size: 30px;
+    font-weight: bold;
+    color:#054B60;
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+        <title>慕课网2016课程学习情况</title>
+
+        <!-- 基本资源引入 -->
+        <script src="../js/lib/jquery.js"></script>
+        <script src="../js/H5ComponentBase.js"></script>
+        <link rel="stylesheet" href="../css/H5ComponentBase.css" />
+
+        <!-- 引入饼图图资源 -->
+        <script src="../js/H5ComponentPie.js"></script>
+        <link rel="stylesheet" href="../css/H5ComponentPie.css" />
+
+        <!-- 引入环图相关资源 -->
+        <script src="../js/H5ComponentRing.js"></script>
+        <link rel="stylesheet" href="../css/H5ComponentRing.css" />
+    </head>
+    <body>
+    <div class="iphone">
+        
+    </div>
+    <script>
+        var cfg = {
+            type:'ring',
+            width:400,
+            height:400,
+            data:[
+                ['JS',.7,'#ff7676']
+            ],
+            css:{top:100,opacity:0},
+            animateIn:{top:200,opacity:1},
+            animateOut:{top:100,opacity:0},
+            center:true
+        };
+
+        var h5 = new H5ComponentRing('myName',cfg);
+        $('.iphone').append(h5);
+
+        var leave = true;
+        $('body').on('click',function(){
+            leave = !leave;
+            $('.h5_component').trigger(leave ? 'onLeave' : 'onLoad');
+        });
+        
+    </script>
+    </body>
+</html>

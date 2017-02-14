@@ -4,204 +4,82 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css" />  <!-- 引用bootstrap文件样式 -->
-        <link rel="stylesheet" href="css/font-awesome.min.css" /> <!-- 引用图标.css文件样式 -->
+        <meta name="description" content="董川的自留地 董川的前端代码">
+        <meta name="keywords" content="Dongchuan Demo_12 董川 前端 javascript html css js">
+        <meta name="author" content="董川 Demo_12">
+        <meta name="robots" content="all">
+        <base target="_blank">
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-    <!-- about -->
-    <div id="about">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>About Me</h2>
-                <hr />
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <img src="img/me.jpg" alt="me" class="img-responsive" />
-                </div>
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="about-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-                        <div class="text-center">
-                            <button type="button" class="btn btn-primary">Download Resume</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- about结束 -->
- 
-    <div id="skills">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>Skills</h2>
-                <hr />
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4 col-sm-6">
-                    <div id="htm"></div>
-                    <h4>HTML</h4>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div id="cs"></div>
-                    <h4>CSS</h4>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div id="js"></div>
-                    <h4>JavaScript</h4>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div id="jq"></div>
-                    <h4>jQuery</h4>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div id="ps"></div>
-                    <h4>Photoshop</h4>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div id="aj"></div>
-                    <h4>Ajax</h4>
-                </div>
-            </div>
-        </div>
-    </div> <!-- skills结束 -->
+    <div id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1">Hello World!</a></li>
+        <li data-menuanchor="page2"><a href="#page2">个人信息</a></li>
+        <li data-menuanchor="page3"><a href="#page3">作品</a></li>
+        <li data-menuanchor="page4"><a href="#page4">我</a></li>
+    </div>
 
-    <div id="resume">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>Experience</h2>
-                <hr />
+    <!-- main_box -->
+    <div id="main_box">
+        <div class="section section1">
+            <div class="container">
+                <div>
+                    <h1>Hello World!</h1>
+                    <p>所有的一切都从这一步开始</p>
+                </div>
             </div>
-            <div class="row">
-                <div class="vertical-line"></div>
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-img">
-                                <h4>2012 <br /> - <br />2016</h4>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Creative agency</h4>
-                                    <h4 class="subheading">UX Builder</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-img">
-                                <h4>2012 <br /> - <br />2016</h4>
-                            </div>
-                            <div class="timeline-panel timeline-right">
-                                <div class="timeline-heading">
-                                    <h4>Creative agency</h4>
-                                    <h4 class="subheading">UX Builder</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-img">
-                                <h4>2012 <br /> - <br />2016</h4>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Creative agency</h4>
-                                    <h4 class="subheading">UX Builder</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- <li>
-                            <div class="timeline-img">
-                                <h4>2012 <br /> - <br />2016</h4>
-                            </div>
-                            <div class="timeline-panel timeline-right">
-                                <div class="timeline-heading">
-                                    <h4>Creative agency</h4>
-                                    <h4 class="subheading">UX Builder</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
-                                </div>
-                            </div>
-                        </li> -->
-                    </ul>
+        </div>
+        <div class="section section2">
+            <div class="container">
+                <h1>个人信息与技能</h1>
+                <ul class="personal_detail">
+                    <li><span>姓名</span>| 唐晓</li>
+                    <li><span>手机</span>| 13953057450</li>
+                    <li><span>邮箱</span>| demo_12@126.com</li>
+                    <li><span>Github</span>| <a href="https://github.com/Dongchuan12">点击进入</a></li>
+                </ul>
+                <div class="personal_skills">
+                    <p><b>HTML&CSS</b>
+                    <br />
+                    遵循W3C规范,写出规范化的代码.熟悉HTML5,CSS3,,CSS3动画效果.盒模型,float的特性.熟悉移动端响应式,熟悉双飞翼布局,圣杯布局,满屏品字布局.了解canvas.</p>
+                    <p><b>JavaScript</b>
+                    <br />
+                    熟悉js原生代码,事件,DOM操作.js原型链,js面向对象编程,闭包,ajax.能够适应js+jQery实现常见效果.</p>
+                    <p><b>前端框架&工具</b>
+                    <br />
+                    熟悉BootStrap,了解Git版本管理工具</p>
+                    <p><b>后端&数据库</b>
+                    <br />
+                    了解PHP,MySQL
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section section3">
+            <div class="container">
+                <h1>SHOW MY CODE</h1>
+                <a class="inter" href="demo/index.html">点击进入>>董川的自留地</a>
+            </div>
+        </div>
+        <div class="section section4">   
+            <div class="container">
+                <h1>为什么CODING?</h1>
+                <h3>热爱</h3>
+                <div>
+                    <p>
+                        爱<span class="bigfont">代码</span>,也爱<span class="bigfont">geek</span><br>
+                        更爱<span class="bigfont">钻研交流共享</span><br>
+                        不认为有什么<span class="bigfont">最好</span>的语言<br>
+                        只相信有<span class="bigfont">适合</span>的语言<br>
+                        我是前端新手<br>
+                        我在<span class="bigfont">向前</span>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-
-    <div id="contact">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>Contact</h2>
-                <hr />
-            </div>
-            <div class="row text-center">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="col-md-4">
-                        <i class="icon-map-marker icon-2x"></i><p>深圳·福田</p>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="icon-envelope-alt icon-2x"></i><p>demo_12@126.com</p>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="icon-tablet icon-2x"></i><p>15002069803</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <h3>Leave me a message</h3>
-                <form action="post" id="contactFrom" name="sendMessage">
-                    <div class="row">
-                        <div class="form-group">
-                            <div class="col-md-6">
-                                <input type="text" id="name" placeholder="Name" class="form-control" required="required" />
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" id="email" placeholder="Email" required="required" class="form-control" />
-                            </div>
-                            <div class="col-md-12">
-                                <textarea name="message" id="message"  rows="4" class="form-control" required="required" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <button type="submit" id="send-mes" class="btn btn-control">Send Message</button>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-8 col-md-offset-2">
-                            <ul class="list-icon">
-                                <li><i class="icon-facebook icon-2x"></i></li>
-                                <li><i class="icon-twitter icon-2x"></i></li>
-                                <li><i class="icon-github icon-2x"></i></li>
-                                <li><i class="icon-pinterest icon-2x"></i></li>
-                                <li><i class="icon-linkedin icon-2x"></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>  <!-- contact结束 -->
-
-    <footer class="text-center">
-        <p>Copyright © 2016 Demo_12.</p>
-    </footer>
-
-
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/circle-progress.js"></script>
-    <script src="js/main.js"></script>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.fullpage.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

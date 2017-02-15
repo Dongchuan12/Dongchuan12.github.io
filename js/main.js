@@ -10,7 +10,7 @@ $(function(){
         afterLoad:function(anchorLink, index){
             if(index == 2){
                 $('.section2').find('h1').fadeIn(2000);
-                $('.personal_detail').animate({marginLeft:'20%'},1000);
+                $('.personal_detail').animate({marginLeft:'15%'},1000);
                 $('.personal_skills').animate({marginLeft:'50%'},1000);
             }
             if(index == 3){

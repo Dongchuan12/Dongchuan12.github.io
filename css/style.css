@@ -2,19 +2,13 @@
 * @Author: anchen
 * @Date:   2017-01-04 22:37:09
 * @Last Modified by:   anchen
-* @Last Modified time: 2017-02-14 16:34:28
+* @Last Modified time: 2017-02-15 14:50:52
 */
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Microsoft Yahei';
+    font:normal 100% 'Microsoft Yahei';
 }
-h2{
-    line-height: 34px;
-    font-size: 34px;
-    margin:0;
-}
-
 /*menu*/
 #menu{
     position: fixed;
@@ -28,7 +22,7 @@ h2{
 }
 #menu li{
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 0.875em;
     text-align: center;
 }
 #menu a{
@@ -53,6 +47,9 @@ h2{
     margin: 5% auto;
     text-align: center;
 }
+h1{
+    font-size: 5em;
+}
 
 /*section1*/
 .section1 {
@@ -68,7 +65,7 @@ h2{
 }
 .section2 h1{
     display: none;
-    font-size: 70px;
+    font-size: 4.375em;
     margin-bottom: 60px;
 }
 .section2 .personal_detail{

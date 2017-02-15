@@ -1,18 +1,16 @@
 ## 个人简历
 <hr>
-You can use the [editor on GitHub](https://github.com/Dongchuan12/Dongchuan12.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## 个人信息
+<hr>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- 唐晓/女/1996
+- 中国矿业大学/电子商务
+- 期望职位：初级前端工程师
+- 期望城市：深圳
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
+## 联系方式
+- 手机：15002069803
+- Email：demo_12@126.com
 ### Header 3
 
 - Bulleted

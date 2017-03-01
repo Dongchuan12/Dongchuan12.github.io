@@ -47,7 +47,7 @@ textarea{
 #username{
   width: 198px;
   padding: 0 20px 0 2px;
-  background: #fff url("../images/status.gif") 202px 0;
+  background: #fff url("../images/status.gif") 202px 0 no-repeat;
 }
 
 #username.thinking{

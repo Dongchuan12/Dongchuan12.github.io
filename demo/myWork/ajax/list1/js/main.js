@@ -50,7 +50,7 @@ function showUsernameStatus(){
     var register = document.getElementById("register");
     if(request.readyState == 4 && request.status == 200){
         if(request.responseText == "okey"){
-            username.className = "approve";
+            username.className = "approved";
             register.disabled = false;
         }else{
             username.className = "denied";

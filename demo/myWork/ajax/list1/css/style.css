@@ -1,0 +1,93 @@
+body{
+    background-color: #333;
+    font-family: Trebuchet MS, Verdana, Helvetica, Arial, san-serif; 
+    margin: 0 auto;
+    text-align: center;
+}
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+a img{
+    border:0;
+}
+
+.wrapper{
+    position: relative;
+    width: 730px;
+    height: 700px;
+    border: solid #300;
+    border-width: 0 15px 15px 15px;
+    margin: 0 auto;
+    background:#750505 url("../images/bgWrapper.png") 8px 0 no-repeat;
+}
+/*logo*/
+.logotypeLeft{
+    position: absolute;
+    top: 41px;
+    left: -41px;
+    z-index: 99;
+}
+.logotypeRight{
+    position: absolute;
+    top: 27px;
+    left: 353px;
+    z-index: 99;
+}
+
+/*文字介绍*/
+#introPane{
+    position: absolute;
+    width: 317px;
+    height: 187px;
+    top: 15px;
+    left: 338px;
+    padding: 100px 15px 0 15px;
+    border: 15px solid #300;
+    text-align: left;
+    background-color: #fff;
+}
+
+/*左边图片列表*/
+
+#itemGuitar{
+    position: absolute;
+    top: 221px;
+    left: 8px;
+}
+#itemShades{
+    position: absolute;
+    top: 326px;
+    left: 8px;
+}
+#itemCowbell{
+    position: absolute;
+    top: 414px;
+    left: 8px;
+}
+#itemHat{
+    position: absolute;
+    top: 540px;
+    left: 8px;
+}
+
+/*信息列表*/
+#detailsPane{
+    position: absolute;
+    width: 317px;
+    height: 208px;
+    top: 347px;
+    left: 338px;
+    border:15px solid #300;
+    padding: 100px 15px 0 15px;
+    text-align: left;
+    background:#fff url("../images/bgDetailPane.png") 115px 91px no-repeat;
+}
+#itemDetail{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#description{
+    padding: 40px 0 0 0;
+}

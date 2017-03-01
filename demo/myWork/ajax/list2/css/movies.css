@@ -5,11 +5,14 @@ body{
   text-align: center;
 }
 
-.wrapper{
+h1{font-size:28px;}
+
+#wrapper{
+  position:relative;
   width: 440px;
   height: 500px;
   margin: 0 auto;
-  padding: 150px 180px 0 180px;
+  padding: 130px 180px 0 180px;
   color: #ddd;
   background: url("../images/bgContent.jpg") 0 -2px;
   text-align: left;
@@ -44,20 +47,23 @@ textarea{
 }
 #register{width: 100px;margin: 0 auto;}
 
-#username{
+#username,#password2{
   width: 198px;
   padding: 0 20px 0 2px;
   background: #fff url("../images/status.gif") 202px 0 no-repeat;
 }
 
-#username.thinking{
-  background-position: 202px -109px;
+#username.thinking,#password2.thinking{
+  background-position: 202px -19px;
 }
-#username.approved{
+#username.approved,#password2.approved{
   background-position: 202px -35px;
 }
-#username.denied{
+#username.denied,#password2.denied,#password1.denied{
   background-color: #ff8282;
   background-position: 202px -52px;
 }
+
+#coverBar{position:absolute;top:490px;left:182px;width:440px;height:115px;overflow:hidden;}
+#coverBar img{position:absolute;top:0;}
 

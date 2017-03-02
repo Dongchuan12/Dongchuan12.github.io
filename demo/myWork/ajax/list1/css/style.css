@@ -15,7 +15,7 @@ a img{
 .wrapper{
     position: relative;
     width: 730px;
-    height: 700px;
+    height: 800px;
     border: solid #300;
     border-width: 0 15px 15px 15px;
     margin: 0 auto;
@@ -75,13 +75,15 @@ a img{
 #detailsPane{
     position: absolute;
     width: 317px;
-    height: 208px;
+    min-height: 208px;
     top: 347px;
     left: 338px;
     border:15px solid #300;
     padding: 100px 15px 0 15px;
     text-align: left;
     background:#fff url("../images/bgDetailPane.png") 115px 91px no-repeat;
+    font-size: 12px;
+    overflow: hidden;
 }
 #itemDetail{
     position: absolute;

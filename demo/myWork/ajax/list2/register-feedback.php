@@ -1,5 +1,5 @@
 <?php
-sleep(10);
+sleep(3);
 
 echo "<h1>Welcome to Mike's!</h1>";
 echo "<p>Here's what you entered, " .$_REQUEST["firstname"]. "</p>";
